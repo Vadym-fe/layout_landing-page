@@ -2,6 +2,16 @@
   margin-top: 164px;
 }
 
+.card {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 2px 0 black;
+    border-radius: 20px;
+  }
+}
+
 .compare__title {
   margin: 0;
   font-weight: 500;

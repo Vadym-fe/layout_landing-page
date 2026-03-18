@@ -1,11 +1,12 @@
 .menu {
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: auto;
   background-color: #c2c2c2;
   font-weight: 600;
   position: fixed;
   text-transform: uppercase;
   inset: 0;
+  transition: all 0.3s ease;
 }
 
 .top-bar {

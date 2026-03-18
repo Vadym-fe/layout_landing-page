@@ -25,6 +25,7 @@
   &__image {
     display: block;
     width: 100%;
+    transition: all 0.3s ease;
 
     &--large {
       height: 100%;
@@ -34,6 +35,10 @@
     &--small {
       height: 100%;
       object-fit: cover;
+    }
+
+    &:hover {
+      transform: scale(1.03);
     }
   }
 
@@ -66,6 +71,11 @@
   &__image--rev {
     display: block;
     width: 100%;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
 
@@ -80,6 +90,7 @@
   padding: 15px 132px;
 
   background-color: #fff;
+  font-family: $font-main;
   font-weight: 700;
   font-size: 16px;
   line-height: 27px;

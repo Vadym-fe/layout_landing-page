@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>MyBIKE</title>
     <link rel="preconnect"
      href="https://fonts.googleapis.com">
     <link rel="preconnect"
@@ -26,7 +26,7 @@
   </head>
   <!-- #endregion -->
   <body class="page__body">
-    <header class="header">
+    <header class="container header">
       <div class="top-bar">
         <a href="#" class="top-bar__logo">
           <img src="src/images/logo-wh.svg" alt="bike logo">
@@ -47,7 +47,7 @@
       </div>
     </header>
 
-    <aside class="menu page__menu" id="menu">
+    <aside class="container menu page__menu" id="menu">
       <div class="top-bar menu__top">
         <a href="#" class="top-bar__logo">
           <img src="src/images/logo-bl.svg" alt="bike logo">
@@ -86,7 +86,7 @@
       </div>
     </aside>
 
-    <main class="main">
+    <main class="container main">
       <section class="move-free__container" id="about-us">
         <div class="move__container">
           <h2 class="move__container-title">Move Free</h2>
@@ -211,54 +211,57 @@
       <section class="contacts" id="contacts">
         <h2 class="contacts__title">Contact us</h2>
         <div class="contacts__content">
-          <div class="contacts__form">
+          <form class="contacts__form">
             <div class="form">
               <input type="text"
               placeholder="Name"
               class="contacts__input"
+              required
               >
               <input
               type="email"
               placeholder="Email"
               class="contacts__input"
+              required
               >
 
               <textarea
                 name="Message"
                 placeholder="Message"
                 class="contacts__textarea"
+                required
               ></textarea>
             </div>
 
-            <div class="contacts__form__button--container">
+            <div class="contacts__button--container">
               <button class="contacts__button">Send</button>
             </div>
-          </div>
+          </form>
           <div class="contacts__info">
             <div class="contacts__item">
               <p class="contacts__label">Phone</p>
-              <p class="contacts__value">+1 234 5555-55-55</p>
+              <a href="number" class="contacts__value-link">+1 234 5555-55-55</a>
             </div>
 
             <div class="contacts__item">
               <p class="contacts__label">Email</p>
-              <p class="contacts__value">hello@miami.com</p>
+              <a href="email" class="contacts__value-link">hello@miami.com</a>
             </div>
 
             <div class="contacts__item">
               <p class="contacts__label">Address</p>
-              <p class="contacts__value">
+              <a href="address" class="contacts__value-link">
                 400 first ave.<br>
                 suite 700<br>
                 Minneapolis, MN 55401
-              </p>
+              </a>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="container footer">
       <img
       src="/src/images/footer-img.png"
       alt="footer"
