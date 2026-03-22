@@ -60,6 +60,16 @@
   &:focus {
     border-color: $color-input-act;
   }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px $color-input-bg inset; // використовуй фон твого input
+    -webkit-text-fill-color: $color-input-act;
+    box-shadow: 0 0 0 1000px $color-input-bg inset;
+    caret-color: auto;
+    transition: background-color 5000s ease-in-out 0;
+  }
 }
 
 .contacts__textarea {
