@@ -8,8 +8,9 @@
 .contacts__content {
   display: flex;
   justify-content: space-between;
-  width: 846px;
+  max-width: 846px;
   margin-top: 48px;
+  gap: 200px;
 }
 
 .contacts__title {
@@ -30,7 +31,7 @@
 
 .contacts__input {
   box-sizing: border-box;
-  width: $width-input;
+  max-width: $width-input;
   height: 48px;
   border-radius: 40px;
   padding: 0 24px;
@@ -66,7 +67,7 @@
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 1000px $color-input-bg inset; // використовуй фон твого input
+    -webkit-box-shadow: 0 0 0 1000px $color-input-bg inset;
     -webkit-text-fill-color: $color-input-act;
     box-shadow: 0 0 0 1000px $color-input-bg inset;
     caret-color: auto;
@@ -75,7 +76,7 @@
 }
 
 .contacts__textarea {
-  width: $width-input;
+  max-width: $width-input;
   min-height: 150px;
   border-radius: 16px;
   box-sizing: border-box;
@@ -108,7 +109,7 @@
 }
 
 .contacts__button {
-  width: $width-input;
+  max-width: $width-input;
   margin-top: 32px;
   border-radius: 40px;
   padding: 15px 132px;

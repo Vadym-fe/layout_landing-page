@@ -15,6 +15,10 @@ body {
   color: white;
 }
 
+.main {
+  z-index: 1;
+}
+
 .container {
   max-width: 2000px;
   margin: 0 auto;
@@ -50,6 +54,8 @@ body {
 }
 
 .footer {
+  z-index: -1;
+  width: 100%;
   padding: 0;
   margin: 164px 0 0;
 }
@@ -67,7 +73,7 @@ body {
 
 @media (max-width: 744px) {
   .menu {
-    width: 744px;
+    max-width: 744px;
     left: auto;
     right: 0;
   }
@@ -92,8 +98,10 @@ body {
   .bikes__card {
     display: flex;
     flex-direction: column;
-    width: 66%;
-    margin-left: 17%;
+    align-items: center;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .details__container {
@@ -107,7 +115,7 @@ body {
   }
 
   .footer__image {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -117,12 +125,12 @@ body {
 
 @media (max-width: 320px) {
   .menu {
-    width: 322px;
+    max-width: 100%;
   }
 
   .header__bottom {
     padding: 0 0 88px;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .header__title {
@@ -151,6 +159,7 @@ body {
   .bikes__card {
     display: flex;
     flex-direction: column;
+    grid-template-columns: none;
     margin: 0;
     width: 100%;
   }
@@ -200,15 +209,21 @@ body {
   }
 
   .contacts__input {
-    max-width: 270px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
   }
 
   .contacts__textarea {
-    max-width: 270px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
   }
 
   .contacts__button {
-    max-width: 270px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
     padding-inline: 48px;
   }
 
