@@ -68,6 +68,22 @@ body {
 }
 
 
+@media (max-width: 1020px) {
+  .bikes__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts__content {
+    gap: 60px;
+  }
+}
+
+
 // Tablet
 
 
@@ -93,27 +109,59 @@ body {
     text-align: left;
   }
 
-  .bikes__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: min-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .details__container {
     margin: 120px 72px 0;
   }
 
   .contacts__content {
-    margin-left: 72px;
-    justify-content: left;
     gap: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
   }
 
   .footer__image {
     max-width: 100%;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .contacts {
+    margin-top: 80px;
+  }
+
+  .contacts__content {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+  }
+
+  .contacts__title {
+    font-size: 32px;
+  }
+
+  .contacts__input {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contacts__textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contacts__button {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    padding-inline: 48px;
+  }
+
+  .contacts__info {
+    margin-top: 38px;
   }
 }
 
@@ -192,42 +240,7 @@ body {
     padding-inline: 48px;
   }
 
-  .contacts {
-    margin-top: 80px;
-  }
 
-  .contacts__content {
-    display: flex;
-    flex-direction: column;
-    margin-inline: auto;
-  }
-
-  .contacts__title {
-    font-size: 32px;
-  }
-
-  .contacts__input {
-    box-sizing: border-box;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .contacts__textarea {
-    box-sizing: border-box;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .contacts__button {
-    box-sizing: border-box;
-    max-width: 100%;
-    width: 100%;
-    padding-inline: 48px;
-  }
-
-  .contacts__info {
-    margin-top: 38px;
-  }
 
   .footer {
     margin: 120px 0 0;
