@@ -10,7 +10,7 @@
   justify-content: space-between;
   max-width: 846px;
   margin-top: 48px;
-  gap: 200px;
+  gap: 250px;
 }
 
 .contacts__title {
@@ -31,7 +31,7 @@
 
 .contacts__input {
   box-sizing: border-box;
-  max-width: $width-input;
+  width: $width-input;
   height: 48px;
   border-radius: 40px;
   padding: 0 24px;
@@ -76,7 +76,7 @@
 }
 
 .contacts__textarea {
-  max-width: $width-input;
+  width: $width-input;
   min-height: 150px;
   border-radius: 16px;
   box-sizing: border-box;
@@ -109,7 +109,7 @@
 }
 
 .contacts__button {
-  max-width: $width-input;
+  width: $width-input;
   margin-top: 32px;
   border-radius: 40px;
   padding: 15px 132px;
