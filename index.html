@@ -215,7 +215,9 @@
       <section class="contacts" id="contacts">
         <h2 class="contacts__title">Contact us</h2>
         <div class="contacts__content">
-          <form class="contacts__form">
+          <form class="contacts__form"
+          onsubmit="this.reset(); return false"
+          >
             <div class="form">
               <input
               type="text"
@@ -244,7 +246,6 @@
               <button
               class="contacts__button"
               type="submit"
-              onsubmit="this.reset(); return false"
               >Send</button>
             </div>
           </form>
