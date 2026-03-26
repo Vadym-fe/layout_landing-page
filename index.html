@@ -24,7 +24,7 @@
     href="/src/icons/favication.png"
     type="image/png">
     <script
-      src="/src/scripts/main.js"
+      src="src/scripts/main.js"
       defer
     ></script>
   </head>
@@ -243,7 +243,9 @@
             <div class="contacts__button--container">
               <button
               class="contacts__button"
-              type="submit">Send</button>
+              type="submit"
+              onsubmit="this.reset(); return false"
+              >Send</button>
             </div>
           </form>
           <div class="contacts__info">
